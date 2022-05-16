@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ryanheise/Desktop/github repo/CyberSecProjects/Encryption'
+g++ -c -g -W -Wall -std=c++14 -DDEBUG=1 -DTEST=1 ccipher.cc -o ccipher.o
+g++ -c -g -W -Wall -std=c++14 -DDEBUG=1 -DTEST=1 cipher.cc -o cipher.o
+g++ -c -g -W -Wall -std=c++14 -DDEBUG=1 -DTEST=1 kcipher.cc -o kcipher.o
+g++ -c -g -W -Wall -std=c++14 -DDEBUG=1 -DTEST=1 main.cc -o main.o
+g++ -c -g -W -Wall -std=c++14 -DDEBUG=1 -DTEST=1 rcipher.cc -o rcipher.o
+g++ -o cipher  ccipher.o cipher.o kcipher.o main.o rcipher.o
+make: Leaving directory `/Users/ryanheise/Desktop/github repo/CyberSecProjects/Encryption'
+ 
